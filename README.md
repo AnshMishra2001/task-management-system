@@ -59,5 +59,25 @@ The frontend is a **React-based SPA** with the following components:
 ### Navigation
 - A **“New Task”** button links to the task form.
 
+## Validation Rules
+
+- **Title:** Required, 1–100 characters.  
+  **Error Messages:**  
+  - "Title is required"  
+  - "Title must not exceed 100 characters."
+
+- **Description:** Optional, 0–500 characters.  
+  **Error Message:**  
+  - "Description must not exceed 500 characters."
+
+- **Status:** Required, must be "To Do," "In Progress," or "Done."  
+  **Error Message:**  
+  - "Invalid status."
+
+- **Due Date:** Optional, valid ISO 8601 date (e.g., "2025-07-10").  
+  **Error Message:**  
+  - "Invalid date format."
+
+
 
 
