@@ -31,12 +31,13 @@ The backend provides RESTful API endpoints to support task management. All endpo
 ```
 
 [Header: Task Management App | New Task Button]
+
 [Task List]
 -------------------------------------------------
-| Title          | Status      | Due Date | Actions |
+| Title          | Status      | Due Date   | Actions       |
 -------------------------------------------------
 | Task 1         | To Do       | 2025-07-10 | Edit | Delete |
-| Task 2         | In Progress | -        | Edit | Delete |
+| Task 2         | In Progress | -          | Edit | Delete |
 -------------------------------------------------
 [No tasks available (if empty)]
 
@@ -47,4 +48,5 @@ Status: [Dropdown: To Do | In Progress | Done]
 Due Date: [Date Picker]
 [Submit Button] [Cancel Button]
 [Error: Title is required (if applicable)]
+
 
