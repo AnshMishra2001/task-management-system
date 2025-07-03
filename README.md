@@ -28,6 +28,7 @@ The backend provides RESTful API endpoints to support task management. All endpo
   "status": "string",
   "dueDate": "string|null"
 }
+```
 
 [Header: Task Management App | New Task Button]
 [Task List]
