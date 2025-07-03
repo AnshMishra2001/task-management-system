@@ -30,23 +30,34 @@ The backend provides RESTful API endpoints to support task management. All endpo
 }
 ```
 
-[Header: Task Management App | New Task Button]
 
-[Task List]
--------------------------------------------------
-| Title          | Status      | Due Date   | Actions       |
--------------------------------------------------
-| Task 1         | To Do       | 2025-07-10 | Edit | Delete |
-| Task 2         | In Progress | -          | Edit | Delete |
--------------------------------------------------
-[No tasks available (if empty)]
+## UI Requirements
 
-[Task Form (on New Task or Edit)]
-Title: [Text Input]
-Description: [Textarea]
-Status: [Dropdown: To Do | In Progress | Done]
-Due Date: [Date Picker]
-[Submit Button] [Cancel Button]
-[Error: Title is required (if applicable)]
+The frontend is a **React-based SPA** with the following components:
+
+### Task List
+- Displays tasks in a table with columns:
+  - **Title**
+  - **Status**
+  - **Due Date**
+  - **Actions** (Edit, Delete buttons)
+- Shows **“No tasks available”** if the task list is empty.
+
+### Task Form
+- **Fields:**
+  - Title (text input)
+  - Description (textarea)
+  - Status (dropdown: “To Do,” “In Progress,” “Done”)
+  - Due Date (date picker)
+- **Buttons:**
+  - Submit (Create/Update)
+  - Cancel (clears form or navigates back)
+
+### Error Handling
+- Displays inline errors for invalid inputs (e.g., **“Title is required”** below the title field).
+
+### Navigation
+- A **“New Task”** button links to the task form.
+
 
 
